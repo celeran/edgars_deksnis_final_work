@@ -1,5 +1,6 @@
 package lv.lu.finalwork.repository;
 
+
 import lv.lu.finalwork.model.Product;
 
 import java.util.List;
