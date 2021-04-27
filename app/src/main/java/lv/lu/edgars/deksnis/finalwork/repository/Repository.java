@@ -1,4 +1,4 @@
-package lv.lu.finalwork.repository;
+package lv.lu.edgars.deksnis.finalwork.repository;
 
 import java.util.List;
 
