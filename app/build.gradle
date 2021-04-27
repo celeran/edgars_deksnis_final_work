@@ -17,16 +17,21 @@ repositories {
 }
 
 dependencies {
-    // Use JUnit test framework.
-    testImplementation 'junit:junit:4.13.1'
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
-    // This dependency is used by the application.
-    implementation 'com.google.guava:guava:30.0-jre'
-    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.9.0'
+    implementation group: 'org.springframework', name: 'spring-context', version: '5.3.6'
+
+    // Use JUnit test framework.
+    testImplementation 'junit:junit:4.13'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.8.0'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.20'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
 
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'lv.lu.edgars.deksnis.finalwork.App'
+    mainClass = 'lv.lu.edgars.deksnis.finalwork.ProductAccountingApplication'
 }
