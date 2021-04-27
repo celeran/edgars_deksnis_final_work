@@ -4,7 +4,7 @@ package lv.lu.edgars.deksnis.finalwork.service;
 import lv.lu.edgars.deksnis.finalwork.model.Product;
 import lv.lu.edgars.deksnis.finalwork.model.ProductCategory;
 import lv.lu.edgars.deksnis.finalwork.model.ProductInputData;
-import lv.lu.edgars.deksnis.finalwork.repository.ProductRepository;
+import lv.lu.edgars.deksnis.finalwork.repository.Repository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -22,7 +22,7 @@ public class ProductServiceTest {
     private ProductService victim;
 
     @Mock
-    private ProductRepository repositoryMock;
+    private Repository<Product> repositoryMock;
 
     @Test
     public void shouldCovertAndStoreProductData() {

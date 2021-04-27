@@ -4,7 +4,7 @@ import lv.lu.edgars.deksnis.finalwork.model.Product;
 import lv.lu.edgars.deksnis.finalwork.model.ProductCategory;
 import lv.lu.edgars.deksnis.finalwork.model.ProductData;
 import lv.lu.edgars.deksnis.finalwork.model.ProductInputData;
-import lv.lu.edgars.deksnis.finalwork.repository.ProductRepository;
+import lv.lu.edgars.deksnis.finalwork.repository.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,10 +15,10 @@ import java.util.List;
 @Service
 public class ProductService {
 
-    private final ProductRepository repository;
+    private final Repository<Product> repository;
 
     @Autowired
-    public ProductService(ProductRepository repository) {
+    public ProductService(Repository<Product> repository) {
         this.repository = repository;
     }
 
